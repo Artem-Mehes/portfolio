@@ -23,8 +23,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         className={cn(
-          "dark bg-gray-900 text-neutral-300 antialiased selection:bg-teal-600 selection:text-white",
-          inter.className,
+          "dark bg-gray-900 text-neutral-300 font-sans antialiased selection:bg-teal-600 selection:text-white",
+          inter.variable,
           robotoMono.variable,
         )}
       >
