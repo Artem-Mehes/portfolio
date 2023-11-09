@@ -2,6 +2,7 @@ import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { BiLogoTelegram } from "react-icons/bi";
 import { FaEnvelope } from "react-icons/fa6";
 import Navigation from "@/app/navigation";
+import { LuArrowUpRight } from "react-icons/lu";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <header className="flex flex-col gap-20 w-1/2 sticky py-24 top-0 max-h-screen">
         <div className="flex flex-col gap-10">
           <div className="flex gap-8 items-center">
+            {/*TODO*/}
             <img
               width={56}
               height={56}
@@ -21,14 +23,28 @@ export default function Home() {
             </h1>
           </div>
 
-          <div className="flex flex-col gap-2">
-            <h2 className="scroll-m-20 text-xl font-semibold tracking-tight first:mt-0">
-              Front-End developer
-            </h2>
-            {/*TODO*/}
-            <p className="text-muted-foreground text-gray-500">
-              I have 3 years of experience building...
-            </p>
+          <div className="flex flex-col gap-10">
+            <div className="flex flex-col gap-2">
+              <h2 className="scroll-m-20 text-xl font-semibold tracking-tight first:mt-0">
+                Front-End developer
+              </h2>
+              {/*TODO*/}
+              <p className="text-neutral-400">
+                I have 3 years of experience building web apps
+              </p>
+            </div>
+
+            <a
+              href="/cv.pdf"
+              target="_blank"
+              className="flex gap-1 items-center font-medium group w-fit hover:text-teal-300"
+            >
+              View Resume
+              <LuArrowUpRight
+                size={22}
+                className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-teal-300"
+              />
+            </a>
           </div>
         </div>
 
@@ -68,8 +84,11 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="flex flex-col gap-10 w-1/2 ">
-        <section id="about" className="pt-24">
+      <main className="flex flex-col gap-40 w-1/2 ">
+        <section id="about" className="pt-24 flex flex-col gap-5">
+          <h3 className="text-2xl font-robotoMono font-extrabold text-teal-300">
+            About
+          </h3>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
           fermentum lorem id dui malesuada, vel cursus nunc placerat. Cras erat
           nisi, ornare eu risus vel, scelerisque tincidunt justo. Nunc risus
@@ -93,7 +112,10 @@ export default function Home() {
           turpis a tellus. Nullam sapien sem, vestibulum a tristique nec,
           condimentum id urna. Aliquam et tempor lorem.
         </section>
-        <section id="experience">
+        <section id="experience" className="flex flex-col gap-6">
+          <h3 className="text-2xl font-robotoMono font-extrabold text-teal-300">
+            Experience
+          </h3>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
           fermentum lorem id dui malesuada, vel cursus nunc placerat. Cras erat
           nisi, ornare eu risus vel, scelerisque tincidunt justo. Nunc risus
@@ -117,7 +139,10 @@ export default function Home() {
           turpis a tellus. Nullam sapien sem, vestibulum a tristique nec,
           condimentum id urna. Aliquam et tempor lorem.
         </section>
-        <section id="pet-projects" className="pb-24">
+        <section id="pet-projects" className="pb-24 flex flex-col gap-6">
+          <h3 className="text-2xl font-robotoMono font-extrabold text-teal-300">
+            Pet projects
+          </h3>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
           fermentum lorem id dui malesuada, vel cursus nunc placerat. Cras erat
           nisi, ornare eu risus vel, scelerisque tincidunt justo. Nunc risus
