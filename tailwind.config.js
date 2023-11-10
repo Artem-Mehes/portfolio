@@ -9,13 +9,6 @@ module.exports = {
     "./src/**/*.{js,jsx}",
   ],
   theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1200px",
-      },
-    },
     extend: {
       fontFamily: {
         sans: ["var(--inter)", ...fontFamily.sans],
