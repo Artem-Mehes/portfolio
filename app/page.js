@@ -4,12 +4,15 @@ import { FaEnvelope } from "react-icons/fa6";
 import Navigation from "@/app/navigation";
 import { LuArrowUpRight } from "react-icons/lu";
 
+/*TODO*/
+// Scrollbar
+
 export default function Home() {
   return (
     <div className="flex min-h-screen">
-      <header className="p-16 bg-gray-950 flex flex-col gap-20 sticky top-0 max-h-screen">
+      <header className="p-16 bg-gray-950 flex flex-col gap-20 sticky top-0 max-h-screen border-r border-r-gray-700">
         <div className="flex flex-col gap-10">
-          <div className="flex gap-8 items-center">
+          <div className="flex gap-6 items-center">
             {/*TODO*/}
             <img
               width={56}
@@ -18,7 +21,7 @@ export default function Home() {
               className="rounded-full"
               src="https://avatars.githubusercontent.com/u/60154078?s=96&v=4"
             />
-            <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl font-robotoMono">
+            <h1 className="scroll-m-20 text-2xl font-extrabold tracking-tight lg:text-4xl font-robotoMono">
               Artem Mehes
             </h1>
           </div>
@@ -86,9 +89,13 @@ export default function Home() {
 
       <main className="mx-auto max-w-3xl flex-1">
         <section id="about" className="flex pt-24 flex-col gap-6">
-          <h3 className="text-2xl font-robotoMono font-extrabold text-teal-300">
-            1. About
-          </h3>
+          <div className="flex gap-5 items-end">
+            <span className="text-gray-400 leading-6">1</span>
+            <h3 className="text-2xl leading-7 font-robotoMono font-extrabold text-teal-300">
+              About
+            </h3>
+          </div>
+
           <div className="border-l-gray-700 border-l pl-7 flex flex-col gap-3">
             <p>
               I am a Front-End Developer driven by an curiosity and a profound
@@ -120,9 +127,12 @@ export default function Home() {
           </div>
         </section>
         <section id="experience" className="flex pt-24 flex-col gap-6">
-          <h3 className="text-2xl font-robotoMono font-extrabold text-teal-300">
-            2. Experience
-          </h3>
+          <div className="flex gap-5 items-end">
+            <span className="text-gray-400 leading-6">2</span>
+            <h3 className="text-2xl leading-7 font-robotoMono font-extrabold text-teal-300">
+              Experience
+            </h3>
+          </div>
           <div className="border-l-gray-700 border-l pl-7 flex flex-col gap-3">
             <p>
               1. Stepping into the Industry: My career began with internal
@@ -176,9 +186,12 @@ export default function Home() {
           </div>
         </section>
         <section id="pet-projects" className="flex pt-24 pb-24 flex-col gap-6">
-          <h3 className="text-2xl font-robotoMono font-extrabold text-teal-300">
-            3. Pet projects
-          </h3>
+          <div className="flex gap-5 items-end">
+            <span className="text-gray-400 leading-6">3</span>
+            <h3 className="text-2xl leading-7 font-robotoMono font-extrabold text-teal-300">
+              Pet projects
+            </h3>
+          </div>
           <div className="border-l-gray-700 border-l pl-7 flex flex-col gap-3">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
             fermentum lorem id dui malesuada, vel cursus nunc placerat. Cras
