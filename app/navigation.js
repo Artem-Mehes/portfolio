@@ -9,8 +9,6 @@ import { sections } from "./config";
 const clamp = (value) => Math.max(0, value);
 const isBetween = (value, floor, ceil) => value >= floor && value <= ceil;
 
-const sectionsElements = document.querySelectorAll("section[id]");
-
 export default function Navigation() {
   const [activeSection, setActiveSection] = useState("");
 
@@ -18,7 +16,7 @@ export default function Navigation() {
     const listener = () => {
       const scroll = window.scrollY;
 
-      sectionsElements.forEach((section) => {
+      document.querySelectorAll("section[id]").forEach((section) => {
         const rect = section.getBoundingClientRect();
         const top = clamp(rect.top + scroll);
         const bottom = clamp(rect.bottom + scroll);
