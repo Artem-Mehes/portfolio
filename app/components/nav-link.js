@@ -10,7 +10,7 @@ export default function NavLink({ name, children, activeSection }) {
     <Link
       className={cn(
         "uppercase flex items-center font-semibold overflow-hidden hover:text-white",
-        isActive ? "text-slate-200" : "text-slate-500",
+        isActive ? "text-slate-200" : "text-secondary",
       )}
       href={`#${name}`}
     >

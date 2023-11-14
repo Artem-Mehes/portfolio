@@ -24,7 +24,7 @@ export const sections = [
           about keeping up with the latest trends in front-end technologies;
           I&apos;m also actively diving into backend development. My goal is to
           evolve into a{" "}
-          <span className="font-bold text-teal-300">full-stack developer</span>,
+          <span className="font-bold text-accent">full-stack developer</span>,
           equipped to handle the complexities of both client and server-side
           programming.
         </p>
@@ -53,7 +53,7 @@ export const sections = [
             <a
               target="_blank"
               href="https://sweetcode.pro/"
-              className="text-teal-500 font-semibold group flex gap-1 items-center w-fit"
+              className="text-accent font-semibold group flex gap-1 items-center w-fit"
             >
               Sweetcode Lab
               <LuArrowUpRight
@@ -63,7 +63,7 @@ export const sections = [
             </a>
           </div>
 
-          <p className="text-slate-500 text-sm font-semibold font-robotoMono">
+          <p className="text-secondary text-sm font-semibold font-robotoMono">
             2020 — PRESENT
           </p>
         </div>
@@ -71,7 +71,7 @@ export const sections = [
         <ul className="flex flex-col gap-2">
           <ListItem>
             My career began with{" "}
-            <span className="font-semibold text-teal-400">
+            <span className="font-semibold text-accent">
               internal company projects
             </span>
             , where I honed my skills in React and was introduced to the

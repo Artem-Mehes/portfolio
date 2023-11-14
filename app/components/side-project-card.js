@@ -23,11 +23,11 @@ export default function SideProjectCard({
       />
       <div className="flex flex-col gap-4 w-full">
         <div className="flex justify-between items-center">
-          <h5 className="font-semibold text-lg text-teal-500 leading-3">
+          <h5 className="font-semibold text-lg text-accent leading-3">
             {title}
           </h5>
 
-          <span className="text-sm text-slate-500">
+          <span className="text-sm text-secondary">
             {dayjs().to(dayjs(date))}
           </span>
         </div>
@@ -39,7 +39,7 @@ export default function SideProjectCard({
             {technologies.map((value) => (
               <li
                 key={value}
-                className="inline-flex text-xs items-center font-semibold text-teal-500 bg-teal-300/10 rounded px-2 py-1"
+                className="inline-flex text-xs items-center font-semibold text-accent bg-teal-300/10 rounded px-2 py-1"
               >
                 {value}
               </li>
@@ -48,7 +48,7 @@ export default function SideProjectCard({
 
           <div className="flex gap-8">
             <a
-              className="flex gap-2 items-center hover:text-teal-400"
+              className="flex gap-2 items-center hover:text-accent"
               href={githubLink}
             >
               <AiFillGithub size={24} />
@@ -56,7 +56,7 @@ export default function SideProjectCard({
             </a>
 
             <a
-              className="flex gap-2 items-center hover:text-teal-400"
+              className="flex gap-2 items-center hover:text-accent"
               href={projectLink}
             >
               <FaLink />
