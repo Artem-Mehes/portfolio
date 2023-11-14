@@ -1,15 +1,16 @@
 import Link from "next/link";
-import { cn } from "@/lib/utils";
 import { BiChevronRight } from "react-icons/bi";
 
-export default function NavLink({ name, activeSection }) {
+import { cn } from "lib/utils";
+
+export default function NavLink({ name, children, activeSection }) {
   const isActive = activeSection === name;
 
   return (
     <Link
       className={cn(
         "uppercase flex items-center font-semibold overflow-hidden hover:text-white",
-        isActive ? "text-white" : "text-gray-500",
+        isActive ? "text-slate-200" : "text-slate-500",
       )}
       href={`#${name}`}
     >
@@ -20,7 +21,7 @@ export default function NavLink({ name, activeSection }) {
         )}
         size={20}
       />
-      {name}
+      {children}
     </Link>
   );
 }

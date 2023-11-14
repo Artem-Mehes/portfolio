@@ -1,7 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import NavLink from "@/app/nav-link";
+
+import NavLink from "components/nav-link";
+
+import { sections } from "./config";
 
 export default function Navigation() {
   const [activeSection, setActiveSection] = useState("");
@@ -16,8 +19,8 @@ export default function Navigation() {
         });
       },
       {
+        threshold: 0.6,
         rootMargin: "0px",
-        threshold: 1,
       },
     );
 
@@ -32,9 +35,11 @@ export default function Navigation() {
 
   return (
     <nav className="flex flex-col gap-4 w-fit">
-      <NavLink name="about" activeSection={activeSection} />
-      <NavLink name="experience" activeSection={activeSection} />
-      <NavLink name="pet-projects" activeSection={activeSection} />
+      {sections.map(({ id, title }) => (
+        <NavLink key={id} name={id} activeSection={activeSection}>
+          {title}
+        </NavLink>
+      ))}
     </nav>
   );
 }
