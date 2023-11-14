@@ -67,7 +67,7 @@ export default function Home() {
       </header>
 
       <div className="flex flex-col w-full gap-10 flex-1">
-        <main className="mx-auto max-w-3xl ">
+        <main className="mx-auto max-w-3xl">
           {sections.map((props, index) => (
             <Section key={props.id} index={index + 1} {...props} />
           ))}

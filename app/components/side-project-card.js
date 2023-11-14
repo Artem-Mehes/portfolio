@@ -14,16 +14,16 @@ export default function SideProjectCard({
   technologies,
 }) {
   return (
-    <div className="flex gap-6 items-start">
+    <div className="flex gap-6 items-start hover:bg-slate-800 px-5 py-8 transition-colors rounded hover:border-1 hover:border-slate-700 duration-300">
       <Image
         src={image}
         alt={title}
-        width={200}
+        width={150}
         className="border-2 border-slate-400 rounded"
       />
       <div className="flex flex-col gap-4 w-full">
         <div className="flex justify-between items-center">
-          <h5 className="font-semibold text-lg text-accent leading-3">
+          <h5 className="font-semibold font-robotoMono text-lg text-accent leading-3">
             {title}
           </h5>
 
@@ -48,16 +48,18 @@ export default function SideProjectCard({
 
           <div className="flex gap-8">
             <a
-              className="flex gap-2 items-center hover:text-accent"
+              target="_blank"
               href={githubLink}
+              className="flex gap-2 items-center hover:text-accent"
             >
               <AiFillGithub size={24} />
               Github
             </a>
 
             <a
-              className="flex gap-2 items-center hover:text-accent"
+              target="_blank"
               href={projectLink}
+              className="flex gap-2 items-center hover:text-accent"
             >
               <FaLink />
               View project

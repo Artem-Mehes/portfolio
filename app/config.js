@@ -7,6 +7,8 @@ import ecommerceImage from "../public/side-projects/e-commerce.png";
 import ipAddressTrackerImage from "../public/side-projects/ip-address-tracker.jpg";
 import jobListingImage from "../public/side-projects/job-listing-with-filtering.png";
 import rockPaperScissors from "../public/side-projects/rock-paper-scissors.png";
+import howToBeAMillionaire from "../public/side-projects/how-to-be-a-millionare.png";
+import videoCoursesApp from "../public/side-projects/video-courses-app.png";
 
 export const sections = [
   {
@@ -137,7 +139,7 @@ export const sections = [
     id: "side-projects",
     title: "Side projects",
     children: (
-      <div className="flex flex-col gap-16">
+      <div className="flex flex-col gap-4">
         <SideProjectCard
           image={ecommerceImage}
           date="2023-10-21T13:47:21Z"
@@ -156,9 +158,29 @@ export const sections = [
             "Zustand",
           ]}
         >
-          A minimalist Next.js e-commerce platform, featuring a streamlined
-          shopping experience with a selection of items, an intuitive cart
-          system, and secure checkout integration via Stripe.
+          A minimalist Next.js e-commerce platform, featuring shopping with a
+          selection of items, an cart system, and checkout integration via
+          Stripe.
+        </SideProjectCard>
+
+        <SideProjectCard
+          image={videoCoursesApp}
+          date="2023-03-19T20:41:11Z"
+          title="Video Courses App"
+          technologies={[
+            "React",
+            "Typescript",
+            "Material UI",
+            "Axios",
+            "React Router",
+            "React Query",
+            "React Player",
+          ]}
+          githubLink="https://github.com/Artem-Mehes/case-task"
+          projectLink="https://artem-mehes.github.io/rock-paper-scissors/"
+        >
+          A video courses app, featuring pagination and progress tracking saved
+          in local storage for a seamless learning experience.
         </SideProjectCard>
 
         <SideProjectCard
@@ -175,7 +197,9 @@ export const sections = [
           githubLink="https://github.com/Artem-Mehes/rock-paper-scissors/tree/main"
           projectLink="https://artem-mehes.github.io/rock-paper-scissors/"
         >
-          Text
+          A dynamic React-based implementation of the Rock Paper Scissors Lizard
+          Spock game, featuring score tracking and persistence using local
+          storage.
         </SideProjectCard>
 
         <SideProjectCard
@@ -186,7 +210,7 @@ export const sections = [
           projectLink="https://artem-mehes.github.io/job-listing-with-filtering/"
           githubLink="https://github.com/Artem-Mehes/job-listing-with-filtering/tree/main"
         >
-          Text
+          A job listing application featuring filtering options.
         </SideProjectCard>
 
         <SideProjectCard
@@ -197,7 +221,22 @@ export const sections = [
           githubLink="https://github.com/Artem-Mehes/ip-address-tracker"
           projectLink="https://artem-mehes.github.io/ip-address-tracker/"
         >
-          Text
+          An IP Address Tracker built with Leaflet, displaying your current IP
+          address, location, and timezone, along with the capability to search
+          for different domains or IP addresses.
+        </SideProjectCard>
+
+        <SideProjectCard
+          image={howToBeAMillionaire}
+          date="2020-10-31T11:04:21Z"
+          technologies={["React", "SASS"]}
+          title={`"Who wants to be a millionaire?" game`}
+          githubLink="https://github.com/Artem-Mehes/react-millionaire-game"
+          projectLink="https://artem-mehes.github.io/react-millionaire-game/"
+        >
+          A React-built rendition of the &apos;Who Wants to Be a
+          Millionaire?&apos; game, developed as a part of a technical assessment
+          for a job application.
         </SideProjectCard>
       </div>
     ),
