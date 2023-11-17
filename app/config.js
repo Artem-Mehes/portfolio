@@ -51,17 +51,17 @@ export const sections = [
             <a
               target="_blank"
               href="https://sweetcode.pro/"
-              className="text-accent font-semibold group flex gap-1 items-center w-fit"
+              className="group flex w-fit items-center gap-1 font-semibold text-accent"
             >
               Sweetcode Lab
               <LuArrowUpRight
                 size={22}
-                className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"
+                className="transition-transform group-hover:-translate-y-1 group-hover:translate-x-1"
               />
             </a>
           </div>
 
-          <p className="text-secondary text-sm font-semibold font-robotoMono">
+          <p className="font-robotoMono text-sm font-semibold text-secondary">
             2020 — PRESENT
           </p>
         </div>

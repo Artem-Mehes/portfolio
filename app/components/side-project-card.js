@@ -14,16 +14,16 @@ export default function SideProjectCard({
   technologies,
 }) {
   return (
-    <div className="flex gap-6 items-start hover:bg-slate-800 px-5 py-8 transition-colors rounded hover:border-1 hover:border-slate-700 duration-300">
+    <div className="hover:border-1 flex items-start gap-6 rounded px-5 py-8 transition-colors duration-300 hover:border-slate-700 hover:bg-slate-800">
       <Image
         src={image}
         alt={title}
         width={150}
-        className="border-2 border-slate-400 rounded"
+        className="rounded border-2 border-slate-400"
       />
-      <div className="flex flex-col gap-4 w-full">
-        <div className="flex justify-between items-center">
-          <h5 className="font-semibold font-robotoMono text-lg text-accent leading-3">
+      <div className="flex w-full flex-col gap-4">
+        <div className="flex items-center justify-between">
+          <h5 className="font-robotoMono text-lg font-semibold leading-3 text-accent">
             {title}
           </h5>
 
@@ -35,11 +35,11 @@ export default function SideProjectCard({
         <div>{children}</div>
 
         <div className="flex flex-col gap-6">
-          <ul className="flex gap-2 flex-wrap">
+          <ul className="flex flex-wrap gap-2">
             {technologies.map((value) => (
               <li
                 key={value}
-                className="inline-flex text-xs items-center font-semibold text-accent bg-teal-300/10 rounded px-2 py-1"
+                className="inline-flex items-center rounded bg-teal-300/10 px-2 py-1 text-xs font-semibold text-accent"
               >
                 {value}
               </li>
@@ -50,7 +50,7 @@ export default function SideProjectCard({
             <a
               target="_blank"
               href={githubLink}
-              className="flex gap-2 items-center hover:text-accent"
+              className="flex items-center gap-2 hover:text-accent"
             >
               <AiFillGithub size={24} />
               Github
@@ -59,7 +59,7 @@ export default function SideProjectCard({
             <a
               target="_blank"
               href={projectLink}
-              className="flex gap-2 items-center hover:text-accent"
+              className="flex items-center gap-2 hover:text-accent"
             >
               <FaLink />
               View project

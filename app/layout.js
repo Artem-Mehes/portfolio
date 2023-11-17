@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`bg-slate-900 text-primary font-sans antialiased selection:bg-teal-600 selection:text-slate-50 ${inter.variable} ${robotoMono.variable}`}
+        className={`bg-slate-900 font-sans text-primary antialiased selection:bg-teal-600 selection:text-slate-50 ${inter.variable} ${robotoMono.variable}`}
       >
         {children}
       </body>
