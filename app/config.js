@@ -4,11 +4,11 @@ import ListItem from "components/list-item";
 import SideProjectCard from "components/side-project-card";
 
 import ecommerceImage from "../public/side-projects/e-commerce.png";
+import videoCoursesApp from "../public/side-projects/video-courses-app.png";
+import rockPaperScissors from "../public/side-projects/rock-paper-scissors.png";
 import ipAddressTrackerImage from "../public/side-projects/ip-address-tracker.jpg";
 import jobListingImage from "../public/side-projects/job-listing-with-filtering.png";
-import rockPaperScissors from "../public/side-projects/rock-paper-scissors.png";
 import howToBeAMillionaire from "../public/side-projects/how-to-be-a-millionare.png";
-import videoCoursesApp from "../public/side-projects/video-courses-app.png";
 
 export const sections = [
   {
@@ -17,29 +17,25 @@ export const sections = [
     children: (
       <>
         <p>
-          I am a Front-End Developer driven by an curiosity and a profound love
-          for technology. My journey into the world of programming began with
-          HTML during my university years.
+          As a Front-End Developer with a passion for technology, my journey
+          started with HTML and has since expanded to a comprehensive front-end
+          skill set. Eager to grow, I&apos;m venturing into backend development
+          with a goal to become a versatile{" "}
+          <span className="font-bold text-accent">full-stack developer</span>.
         </p>
         <p>
-          I am constantly expanding my skill set. I&apos;m not just passionate
-          about keeping up with the latest trends in front-end technologies;
-          I&apos;m also actively diving into backend development. My goal is to
-          evolve into a{" "}
-          <span className="font-bold text-accent">full-stack developer</span>,
-          equipped to handle the complexities of both client and server-side
-          programming.
-        </p>
-        <p>
-          In my quest for knowledge, I&apos;ve tackled projects ranging from
-          internal company initiatives to complex applications in the fitness
-          and veterinary sectors, and more recently, the dynamic world of
-          cryptocurrencies.
-        </p>
-        <p>
-          As a detail-oriented developer, I strive to refine every aspect of the
-          user experience while contributing to the bigger picture of each
-          project.
+          My experience spans a variety of projects, from enhancing{" "}
+          <span className="font-bold text-accent">
+            internal company products
+          </span>{" "}
+          to creating applications in{" "}
+          <span className="font-bold text-accent">
+            fitness, veterinary services, and the dynamic field of
+            cryptocurrencies
+          </span>
+          . I bring a commitment to enhancing user experiences, and a
+          problem-solving approach that aligns with project objectives and team
+          goals.
         </p>
       </>
     ),
@@ -71,14 +67,14 @@ export const sections = [
         </div>
 
         <ul className="flex flex-col gap-2">
-          <ListItem>
-            My career began with{" "}
-            <span className="font-semibold text-accent">
-              internal company projects
-            </span>
-            , where I honed my skills in React and was introduced to the
-            practical aspects of front-end development
-          </ListItem>
+          {/*<ListItem>*/}
+          {/*  My career began with{" "}*/}
+          {/*  <span className="font-semibold text-accent">*/}
+          {/*    internal company projects*/}
+          {/*  </span>*/}
+          {/*  , where I honed my skills in React and was introduced to the*/}
+          {/*  practical aspects of front-end development*/}
+          {/*</ListItem>*/}
 
           <ListItem title="Fitness Industry Project">
             Joining an international team predominantly comprising English

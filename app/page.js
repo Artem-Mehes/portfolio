@@ -73,7 +73,7 @@ export default function Home() {
           ))}
         </main>
 
-        <footer className="p-3 bg-slate-800 text-center">
+        <footer className="p-3 text-sm bg-slate-800 text-center">
           Built with <span className="font-semibold text-accent">Next.js</span>{" "}
           and <span className="font-semibold text-accent">Tailwind CSS</span>,
           deployed with{" "}
