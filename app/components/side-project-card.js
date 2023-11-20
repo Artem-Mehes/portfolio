@@ -19,15 +19,20 @@ export default function SideProjectCard({
         src={image}
         alt={title}
         width={150}
-        className="rounded border-2 border-slate-400"
+        className="rounded border-2 border-slate-400 object-cover"
       />
       <div className="flex w-full flex-col gap-4">
-        <div className="flex items-center justify-between">
-          <h5 className="font-robotoMono text-lg font-semibold leading-3 text-accent">
-            {title}
-          </h5>
+        <div className="flex min-w-0 items-center gap-8">
+          <div className="min-w-0 flex-1">
+            <h5
+              title={title}
+              className="truncate text-lg font-semibold text-accent"
+            >
+              {title}
+            </h5>
+          </div>
 
-          <span className="text-sm text-secondary">
+          <span className="shrink-0 text-sm text-secondary">
             {dayjs().to(dayjs(date))}
           </span>
         </div>
@@ -46,25 +51,29 @@ export default function SideProjectCard({
             ))}
           </ul>
 
-          <div className="flex gap-8">
-            <a
-              target="_blank"
-              href={githubLink}
-              className="flex items-center gap-2 hover:text-accent"
-            >
-              <AiFillGithub size={24} />
-              Github
-            </a>
+          <ul className="flex gap-8">
+            <li>
+              <a
+                target="_blank"
+                href={githubLink}
+                className="flex items-center gap-2 hover:text-accent"
+              >
+                <AiFillGithub size={24} />
+                Github
+              </a>
+            </li>
 
-            <a
-              target="_blank"
-              href={projectLink}
-              className="flex items-center gap-2 hover:text-accent"
-            >
-              <FaLink />
-              View project
-            </a>
-          </div>
+            <li>
+              <a
+                target="_blank"
+                href={projectLink}
+                className="flex items-center gap-2 hover:text-accent"
+              >
+                <FaLink />
+                View project
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

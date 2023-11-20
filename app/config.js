@@ -1,7 +1,8 @@
 import { LuArrowUpRight } from "react-icons/lu";
 
-import ListItem from "components/list-item";
-import SideProjectCard from "components/side-project-card";
+import AccentText from "@/components/accent-text";
+import ExperienceList from "@/components/experience-list";
+import SideProjectCard from "@/components/side-project-card";
 
 import ecommerceImage from "../public/side-projects/e-commerce.png";
 import videoCoursesApp from "../public/side-projects/video-courses-app.png";
@@ -10,6 +11,106 @@ import ipAddressTrackerImage from "../public/side-projects/ip-address-tracker.jp
 import jobListingImage from "../public/side-projects/job-listing-with-filtering.png";
 import howToBeAMillionaire from "../public/side-projects/how-to-be-a-millionare.png";
 
+const experienceItems = [
+  {
+    title: "Internal company products",
+    items: [
+      <>
+        Developed internal applications focused on the{" "}
+        <AccentText>medical products distribution sector</AccentText>.
+      </>,
+      <>
+        Implemented <AccentText>interactive maps</AccentText> showcasing shop
+        locations for easy navigation and accessibility.
+      </>,
+      <>
+        Created{" "}
+        <AccentText>data tables detailing product information</AccentText>,
+        enhancing user understanding and decision-making.
+      </>,
+    ],
+  },
+  {
+    title: "Fitness-related project",
+    items: [
+      <>
+        Contributed to the development of a <AccentText>fitness app</AccentText>{" "}
+        aimed at coaches and their clients.
+      </>,
+      <>
+        Implemented a <AccentText>multi-step wizard form</AccentText> allowing
+        coaches to input client data efficiently.
+      </>,
+      <>
+        Integrated advanced data visualization features, including various{" "}
+        <AccentText>graphs</AccentText>, to track and display client progress
+        effectively.
+      </>,
+      <>
+        Collaborated with an{" "}
+        <AccentText>
+          international team predominantly from Britain and the USA
+        </AccentText>
+      </>,
+      <>
+        Significantly enhanced <AccentText>TypeScript</AccentText> skills
+        through complex application development and problem-solving.
+      </>,
+    ],
+  },
+  {
+    /*TODO: arrow*/
+    title: (
+      <a
+        target="_blank"
+        className="text-lg text-accent"
+        href="https://guardianvets.com/"
+      >
+        Guardian Vets
+      </a>
+    ),
+    items: [
+      <>
+        Contributed to the development of a <AccentText>telehealth</AccentText>{" "}
+        platform for veterinary hospitals, enhancing digital healthcare
+        management.
+      </>,
+      <>
+        Implemented <AccentText>multi-step forms</AccentText> for recording
+        patient details during calls.
+      </>,
+      <>
+        Created pages with detailed information on veterinary hospitals,
+        including <AccentText>features for editing and updating</AccentText>{" "}
+        hospital and client profiles.
+      </>,
+    ],
+  },
+  {
+    title: "Polli.co",
+    items: [
+      <>
+        Actively involved in developing a{" "}
+        <AccentText>cryptocurrency</AccentText> application that integrates with
+        various wallets including <AccentText>Cosmos and Ethereum</AccentText>.
+      </>,
+      <>
+        Implemented features for viewing detailed wallet information such as
+        balance, withdrawals, deposits, and rewards, presented through{" "}
+        <AccentText>dynamic graphs and tables</AccentText>.
+      </>,
+      <>
+        Enabled functionalities for managing cryptocurrency transactions
+        including <AccentText>delegations and withdrawals</AccentText>.
+      </>,
+      <>
+        Challenged my front-end development skills by implementing complex and
+        <AccentText>unique design elements</AccentText>.
+      </>,
+    ],
+  },
+];
+
 export const sections = [
   {
     id: "about",
@@ -17,10 +118,12 @@ export const sections = [
     children: (
       <>
         <p>
-          As a Front-End Developer with a passion for technology, my journey
-          started with HTML and has since expanded to a comprehensive front-end
-          skill set. Eager to grow, I&apos;m venturing into backend development
-          with a goal to become a versatile{" "}
+          As a{" "}
+          <span className="font-bold text-accent">front-end developer</span>{" "}
+          with a passion for technology, my journey started with HTML and has
+          since expanded to a comprehensive front-end skill set. Eager to grow,
+          I&apos;m venturing into backend development with a goal to become a
+          versatile{" "}
           <span className="font-bold text-accent">full-stack developer</span>.
         </p>
         <p>
@@ -29,11 +132,11 @@ export const sections = [
             internal company products
           </span>{" "}
           to creating applications in{" "}
-          <span className="font-bold text-accent">
-            fitness, veterinary services, and the dynamic field of
-            cryptocurrencies
-          </span>
-          . I bring a commitment to enhancing user experiences, and a
+          <span className="font-bold text-accent">fitness</span>,{" "}
+          <span className="font-bold text-accent">veterinary services</span>,
+          and the dynamic field of{" "}
+          <span className="font-bold text-accent">cryptocurrencies</span>. I
+          bring a commitment to enhancing user experiences, and a
           problem-solving approach that aligns with project objectives and team
           goals.
         </p>
@@ -66,68 +169,11 @@ export const sections = [
           </p>
         </div>
 
-        <ul className="flex flex-col gap-2">
-          {/*<ListItem>*/}
-          {/*  My career began with{" "}*/}
-          {/*  <span className="font-semibold text-accent">*/}
-          {/*    internal company projects*/}
-          {/*  </span>*/}
-          {/*  , where I honed my skills in React and was introduced to the*/}
-          {/*  practical aspects of front-end development*/}
-          {/*</ListItem>*/}
-
-          <ListItem title="Fitness Industry Project">
-            Joining an international team predominantly comprising English
-            speakers from Britain and the USA, I played a pivotal role in the
-            development of a fitness application for coaches. This project not
-            only honed my technical skills but also sharpened my communication
-            abilities in English, facilitating effective collaboration in a
-            diverse and dynamic environment.
-          </ListItem>
-
-          <ListItem title="Exploring Next.js">
-            I had the opportunity to lead a mini-project for a client, utilizing
-            Next.js. This project was a testament to my adaptability and
-            willingness to embrace new technologies, further diversifying my
-            skill set.
-          </ListItem>
-
-          <ListItem title="Guardian Vets">
-            A significant part of my career was dedicated to an outsource
-            project for veterinary hospitals. Named Guardian Vets, this platform
-            enables hospitals to manage client information seamlessly. My role
-            involved comprehensive front-end development, contributing to a
-            system that facilitates better pet care.
-          </ListItem>
-
-          <ListItem title="Cryptocurrency Project">
-            Currently, I am deeply involved in an innovative project in the
-            cryptocurrency domain, working alongside a talented team of
-            developers primarily from Poland. Despite the geographical
-            differences, our communication is conducted entirely in English,
-            demonstrating my adaptability and proficiency in working within
-            multilingual and multicultural teams. This project, which focuses on
-            aggregating data from crypto wallets and presenting it through
-            comprehensive tables and graphs, has been a testament to my ability
-            to lead and execute complex projects in a global setting.
-          </ListItem>
-
-          <ListItem title="Beyond Development">
-            My role extends beyond coding. I actively participate in conducting
-            interviews, reviewing test tasks, and mentoring new developers. This
-            involvement in the hiring process and team management has allowed me
-            to develop a keen understanding of team dynamics and project
-            leadership.
-          </ListItem>
-
-          <ListItem>
-            My journey so far has been a blend of continuous learning,
-            overcoming challenges, and contributing to meaningful projects. Each
-            experience has been a building block in my career, and I look
-            forward to many more opportunities to innovate and excel in the
-            field of front-end development.
-          </ListItem>
-        </ul>
+        <div className="flex flex-col gap-6">
+          {experienceItems.map((item) => (
+            <ExperienceList {...item} key={item.title} />
+          ))}
+        </div>
       </div>
     ),
   },
