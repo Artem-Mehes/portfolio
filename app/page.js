@@ -1,7 +1,5 @@
-import Section from "components/section";
-
 import Header from "./header";
-import { sections } from "./config";
+import Sections from "./sections";
 
 export default function Home() {
   return (
@@ -9,11 +7,7 @@ export default function Home() {
       <Header />
 
       <main className="flex grow flex-col gap-10">
-        <div className="flex flex-col gap-16 px-8 lg:mx-auto lg:max-w-2xl lg:gap-0 xl:max-w-3xl 2xl:max-w-4xl">
-          {sections.map((props, index) => (
-            <Section key={props.id} index={index + 1} {...props} />
-          ))}
-        </div>
+        <Sections />
 
         <footer className="bg-slate-800 p-3 text-center text-sm">
           Built with <span className="font-semibold text-accent">Next.js</span>{" "}

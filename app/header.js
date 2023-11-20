@@ -28,7 +28,6 @@ export default function Header() {
             <h2 className="scroll-m-20 text-xl font-semibold tracking-tight text-tertiary first:mt-0">
               Middle Front-End developer
             </h2>
-            {/*TODO*/}
             <p className="text-secondary">
               I have 3 years of experience building web apps
             </p>

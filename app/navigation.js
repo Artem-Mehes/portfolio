@@ -2,7 +2,7 @@
 
 import { useState, useLayoutEffect } from "react";
 
-import NavLink from "components/nav-link";
+import NavLink from "@/components/nav-link";
 
 import { sections } from "./config";
 
