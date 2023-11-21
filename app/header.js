@@ -1,10 +1,29 @@
 import Image from "next/image";
 import { LuArrowUpRight } from "react-icons/lu";
 import Navigation from "./navigation";
-import IconLink from "components/icon-link";
+import IconLink from "@/components/icon-link";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { FaEnvelope } from "react-icons/fa6";
 import { BiLogoTelegram } from "react-icons/bi";
+
+const iconLinks = [
+  {
+    icon: AiFillGithub,
+    href: "https://github.com/Artem-Mehes",
+  },
+  {
+    icon: AiFillLinkedin,
+    href: "https://www.linkedin.com/in/artem-mehes-b011901b6/",
+  },
+  {
+    icon: FaEnvelope,
+    href: "mailto:artemmeges@gmail.com",
+  },
+  {
+    icon: BiLogoTelegram,
+    href: "https://t.me/Artem_Mehes",
+  },
+];
 
 export default function Header() {
   return (
@@ -50,13 +69,9 @@ export default function Header() {
       <Navigation />
 
       <div className="mt-auto flex gap-5">
-        <IconLink href="https://github.com/Artem-Mehes" icon={AiFillGithub} />
-        <IconLink
-          icon={AiFillLinkedin}
-          href="https://www.linkedin.com/in/artem-mehes-b011901b6/"
-        />
-        <IconLink href="mailto:artemmeges@gmail.com" icon={FaEnvelope} />
-        <IconLink href="https://t.me/Artem_Mehes" icon={BiLogoTelegram} />
+        {iconLinks.map((item, index) => (
+          <IconLink {...item} key={index} />
+        ))}
       </div>
     </header>
   );
