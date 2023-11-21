@@ -13,11 +13,11 @@ export default function SideProjectCard({
   technologies,
 }) {
   return (
-    <div className="hover:border-1 flex flex-col items-start gap-6 rounded px-5 py-8 transition-colors duration-300 hover:border-slate-700 hover:bg-slate-800 2xl:flex-row">
+    <div className="hover:border-1 flex flex-col items-start gap-6 rounded px-5 py-8 transition-colors duration-300 hover:border-slate-700 hover:bg-slate-800 xl:flex-row">
       <Image
         src={image}
         alt={title}
-        className="rounded border-2 border-slate-400 2xl:max-w-[150px]"
+        className="rounded border-2 border-slate-400 xl:max-w-[150px]"
       />
       <div className="flex w-full flex-col gap-4">
         <div className="flex min-w-0 items-center gap-8">
