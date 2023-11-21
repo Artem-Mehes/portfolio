@@ -1,4 +1,5 @@
 import { BiChevronRight } from "react-icons/bi";
+import dayjs from "dayjs";
 
 function ListItem({ children }) {
   return (
@@ -13,13 +14,19 @@ function ListItem({ children }) {
 }
 
 export default function ExperienceList({ items, title, from, to }) {
+  const date = `${dayjs(from).format("LL")} - ${
+    dayjs(to).isToday() ? "Present" : dayjs(to).format("LL")
+  }`;
+
   return (
     <div className="flex flex-col gap-3">
-      <header className="flex justify-between">
-        {typeof title === "string" ? (
-          <h5 className="text-lg font-semibold text-accent">{title}</h5>
-        ) : (
-          title
+      <header className="flex items-center justify-between gap-3">
+        <h5 className="shrink-0 text-lg font-semibold text-accent">{title}</h5>
+
+        {from && to && (
+          <span className="truncate text-sm text-secondary" title={date}>
+            {date}
+          </span>
         )}
       </header>
 

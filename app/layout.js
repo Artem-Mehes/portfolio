@@ -3,8 +3,12 @@ import dayjs from "dayjs";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import relativeTime from "dayjs/plugin/relativeTime";
+import localizedFormat from "dayjs/plugin/localizedFormat";
+import isToday from "dayjs/plugin/isToday";
 
+dayjs.extend(isToday);
 dayjs.extend(relativeTime);
+dayjs.extend(localizedFormat);
 
 export const inter = Inter({
   subsets: ["latin"],

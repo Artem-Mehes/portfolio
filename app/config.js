@@ -12,6 +12,8 @@ export const sections = [
 export const experienceItems = [
   {
     title: "Polli.co",
+    from: "2023-07-13",
+    to: Date.now(),
     items: [
       <>
         Actively involved in developing a{" "}
@@ -36,13 +38,10 @@ export const experienceItems = [
     ],
   },
   {
+    from: "2022-03-28",
+    to: "2023-07-13",
     title: (
-      <ArrowLink
-        className="text-lg font-semibold"
-        href="https://guardianvets.com/"
-      >
-        Guardian Vets
-      </ArrowLink>
+      <ArrowLink href="https://guardianvets.com/">Guardian Vets</ArrowLink>
     ),
     items: [
       <>
