@@ -37,7 +37,7 @@ export default function Header() {
             className="rounded-full"
             src="https://avatars.githubusercontent.com/u/60154078?s=96&v=4"
           />
-          <h1 className="scroll-m-20 font-robotoMono text-4xl font-extrabold tracking-tight text-tertiary">
+          <h1 className="scroll-m-20 font-robotoMono text-2xl font-extrabold tracking-tight text-tertiary sm:text-4xl">
             Artem Mehes
           </h1>
         </div>

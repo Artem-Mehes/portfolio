@@ -3,7 +3,7 @@ import Sections from "./sections";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col lg:flex-row">
+    <div className="flex min-h-screen flex-col gap-16 lg:flex-row lg:gap-0">
       <Header />
 
       <main className="flex grow flex-col gap-10">

@@ -21,7 +21,7 @@ function Section({ index, title, children, ...props }) {
         </h3>
       </div>
 
-      <div className="flex flex-col gap-3 border-l border-l-gray-700 pl-7">
+      <div className="flex flex-col gap-3 sm:border-l sm:border-l-gray-700 sm:pl-7">
         {children}
       </div>
     </section>

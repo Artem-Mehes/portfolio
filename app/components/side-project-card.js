@@ -1,8 +1,8 @@
 import dayjs from "dayjs";
 
 import Image from "next/image";
-import { AiFillGithub } from "react-icons/ai";
 import { FaLink } from "react-icons/fa";
+import { AiFillGithub } from "react-icons/ai";
 
 export default function SideProjectCard({
   date,
@@ -14,12 +14,11 @@ export default function SideProjectCard({
   technologies,
 }) {
   return (
-    <div className="hover:border-1 flex items-start gap-6 rounded px-5 py-8 transition-colors duration-300 hover:border-slate-700 hover:bg-slate-800">
+    <div className="hover:border-1 flex flex-col items-start gap-6 rounded px-5 py-8 transition-colors duration-300 hover:border-slate-700 hover:bg-slate-800 2xl:flex-row">
       <Image
         src={image}
         alt={title}
-        width={150}
-        className="rounded border-2 border-slate-400 object-cover"
+        className="self-center rounded border-2 border-slate-400 md:max-w-xs 2xl:max-w-[150px] 2xl:self-auto"
       />
       <div className="flex w-full flex-col gap-4">
         <div className="flex min-w-0 items-center gap-8">
