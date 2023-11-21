@@ -18,7 +18,7 @@ export default function SideProjectCard({
       <Image
         src={image}
         alt={title}
-        className="self-center rounded border-2 border-slate-400 md:max-w-xs 2xl:max-w-[150px] 2xl:self-auto"
+        className="rounded border-2 border-slate-400 2xl:max-w-[150px]"
       />
       <div className="flex w-full flex-col gap-4">
         <div className="flex min-w-0 items-center gap-8">

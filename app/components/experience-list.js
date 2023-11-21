@@ -12,14 +12,17 @@ function ListItem({ children }) {
   );
 }
 
-export default function ExperienceList({ items, title }) {
+export default function ExperienceList({ items, title, from, to }) {
   return (
     <div className="flex flex-col gap-3">
-      {typeof title === "string" ? (
-        <h5 className="text-lg text-accent">{title}</h5>
-      ) : (
-        title
-      )}
+      <header className="flex justify-between">
+        {typeof title === "string" ? (
+          <h5 className="text-lg font-semibold text-accent">{title}</h5>
+        ) : (
+          title
+        )}
+      </header>
+
       <ul className="flex flex-col gap-2">
         {items.map((item, index) => (
           <ListItem key={index}>{item}</ListItem>

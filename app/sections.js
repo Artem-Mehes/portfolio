@@ -33,25 +33,19 @@ export default function Sections() {
     <div className="flex flex-col gap-16 px-8 lg:mx-auto lg:max-w-2xl lg:gap-0 xl:max-w-3xl 2xl:max-w-4xl">
       <Section id="about" title="About" index={1}>
         <p>
-          As a{" "}
-          <span className="font-bold text-accent">front-end developer</span>{" "}
-          with a passion for technology, my journey started with HTML and has
-          since expanded to a comprehensive front-end skill set. Eager to grow,
+          As a <span className="text-accent">front-end developer</span> with a
+          passion for technology, my journey started with HTML and has since
+          expanded to a comprehensive front-end skill set. Eager to grow,
           I&apos;m venturing into backend development with a goal to become a
-          versatile{" "}
-          <span className="font-bold text-accent">full-stack developer</span>.
+          versatile <span className="text-accent">full-stack developer</span>.
         </p>
         <p>
           My experience spans a variety of projects, from enhancing{" "}
-          <span className="font-bold text-accent">
-            internal company products
-          </span>{" "}
-          to creating applications in{" "}
-          <span className="font-bold text-accent">fitness</span>,{" "}
-          <span className="font-bold text-accent">veterinary services</span>,
-          and the dynamic field of{" "}
-          <span className="font-bold text-accent">cryptocurrencies</span>. I
-          bring a commitment to enhancing user experiences, and a
+          <span className="text-accent">internal company products</span> to
+          creating applications in <span className="text-accent">fitness</span>,{" "}
+          <span className="text-accent">veterinary services</span>, and the
+          dynamic field of <span className="text-accent">cryptocurrencies</span>
+          . I bring a commitment to enhancing user experiences, and a
           problem-solving approach that aligns with project objectives and team
           goals.
         </p>

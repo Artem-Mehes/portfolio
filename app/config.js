@@ -1,5 +1,4 @@
 import ArrowLink from "@/components/arrow-link";
-import AccentText from "@/components/accent-text";
 
 export const sections = [
   { id: "about", title: "About" },
@@ -12,20 +11,54 @@ export const sections = [
 
 export const experienceItems = [
   {
-    title: "Internal company products",
+    title: "Polli.co",
     items: [
       <>
-        Developed internal applications focused on the{" "}
-        <AccentText>medical products distribution sector</AccentText>.
+        Actively involved in developing a{" "}
+        <span className="text-accent">cryptocurrency</span> application that
+        integrates with various wallets including{" "}
+        <span className="text-accent">Cosmos and Ethereum</span>.
       </>,
       <>
-        Implemented <AccentText>interactive maps</AccentText> showcasing shop
-        locations for easy navigation and accessibility.
+        Implemented features for viewing detailed wallet information such as
+        balance, withdrawals, deposits, and rewards, presented through{" "}
+        <span className="text-accent">dynamic graphs and tables</span>.
       </>,
       <>
-        Created{" "}
-        <AccentText>data tables detailing product information</AccentText>,
-        enhancing user understanding and decision-making.
+        Enabled functionalities for managing cryptocurrency transactions
+        including{" "}
+        <span className="text-accent">delegations and withdrawals</span>.
+      </>,
+      <>
+        Challenged my front-end development skills by implementing complex and{" "}
+        <span className="text-accent">unique design elements</span>.
+      </>,
+    ],
+  },
+  {
+    title: (
+      <ArrowLink
+        className="text-lg font-semibold"
+        href="https://guardianvets.com/"
+      >
+        Guardian Vets
+      </ArrowLink>
+    ),
+    items: [
+      <>
+        Contributed to the development of a{" "}
+        <span className="text-accent">telehealth</span> platform for veterinary
+        hospitals, enhancing digital healthcare management.
+      </>,
+      <>
+        Implemented <span className="text-accent">multi-step forms</span> for
+        recording patient details during calls.
+      </>,
+      <>
+        Created pages with detailed information on veterinary hospitals,
+        including{" "}
+        <span className="text-accent">features for editing and updating</span>{" "}
+        hospital and client profiles.
       </>,
     ],
   },
@@ -33,76 +66,56 @@ export const experienceItems = [
     title: "Fitness-related project",
     items: [
       <>
-        Contributed to the development of a <AccentText>fitness app</AccentText>{" "}
-        aimed at coaches and their clients.
+        Contributed to the development of a{" "}
+        <span className="text-accent">fitness app</span> aimed at coaches and
+        their clients.
       </>,
       <>
-        Implemented a <AccentText>multi-step wizard form</AccentText> allowing
+        Implemented a{" "}
+        <span className="text-accent">multi-step wizard form</span> allowing
         coaches to input client data efficiently.
       </>,
       <>
         Integrated advanced data visualization features, including various{" "}
-        <AccentText>graphs</AccentText>, to track and display client progress
-        effectively.
+        <span className="text-accent">graphs</span>, to track and display client
+        progress effectively.
       </>,
       <>
         Collaborated with an{" "}
-        <AccentText>
+        <span className="text-accent">
           international team predominantly from Britain and the USA
-        </AccentText>
+        </span>
       </>,
       <>
-        Significantly enhanced <AccentText>TypeScript</AccentText> skills
-        through complex application development and problem-solving.
+        Significantly enhanced <span className="text-accent">TypeScript</span>{" "}
+        skills through complex application development and problem-solving.
       </>,
     ],
   },
   {
-    title: (
-      <ArrowLink className="text-lg" href="https://guardianvets.com/">
-        Guardian Vets
-      </ArrowLink>
-    ),
+    title: "Internal company products",
     items: [
       <>
-        Contributed to the development of a <AccentText>telehealth</AccentText>{" "}
-        platform for veterinary hospitals, enhancing digital healthcare
-        management.
+        Developed internal applications focused on the{" "}
+        <span className="text-accent">
+          medical products distribution sector
+        </span>
+        .
       </>,
       <>
-        Implemented <AccentText>multi-step forms</AccentText> for recording
-        patient details during calls.
+        Implemented <span className="text-accent">interactive maps</span>{" "}
+        showcasing shop locations for easy navigation and accessibility.
       </>,
       <>
-        Created pages with detailed information on veterinary hospitals,
-        including <AccentText>features for editing and updating</AccentText>{" "}
-        hospital and client profiles.
+        Created{" "}
+        <span className="text-accent">
+          data tables detailing product information
+        </span>
+        , enhancing user understanding and decision-making.
       </>,
     ],
   },
-  {
-    title: "Polli.co",
-    items: [
-      <>
-        Actively involved in developing a{" "}
-        <AccentText>cryptocurrency</AccentText> application that integrates with
-        various wallets including <AccentText>Cosmos and Ethereum</AccentText>.
-      </>,
-      <>
-        Implemented features for viewing detailed wallet information such as
-        balance, withdrawals, deposits, and rewards, presented through{" "}
-        <AccentText>dynamic graphs and tables</AccentText>.
-      </>,
-      <>
-        Enabled functionalities for managing cryptocurrency transactions
-        including <AccentText>delegations and withdrawals</AccentText>.
-      </>,
-      <>
-        Challenged my front-end development skills by implementing complex and{" "}
-        <AccentText>unique design elements</AccentText>.
-      </>,
-    ],
-  },
+
   {
     title: "Beyond development",
     items: [
