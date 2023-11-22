@@ -27,7 +27,7 @@ const iconLinks = [
 
 export default function Header() {
   return (
-    <header className="flex flex-col gap-8 bg-gray-950 p-8 lg:sticky lg:top-0 lg:h-screen lg:gap-20 lg:border-r lg:border-r-gray-700 xl:p-16">
+    <header className="flex flex-col gap-8 bg-slate-950 p-8 lg:sticky lg:top-0 lg:h-screen lg:gap-20 lg:border-r lg:border-r-gray-700 xl:p-16">
       <div className="flex flex-col gap-6 lg:gap-10">
         <div className="flex items-center gap-6">
           <Image
