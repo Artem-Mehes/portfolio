@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { LuArrowUpRight } from "react-icons/lu";
 import Navigation from "./navigation";
-import IconLink from "@/components/icon-link";
+import IconLink from "./icon-link";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { FaEnvelope } from "react-icons/fa6";
 import { BiLogoTelegram } from "react-icons/bi";

@@ -2,14 +2,13 @@ import ArrowLink from "@/components/arrow-link";
 import ExperienceList from "@/components/experience-list";
 import SideProjectCard from "@/components/side-project-card";
 
-import ecommerceImage from "../public/side-projects/e-commerce.png";
-import videoCoursesApp from "../public/side-projects/video-courses-app.png";
-import rockPaperScissors from "../public/side-projects/rock-paper-scissors.png";
-import jobListingImage from "../public/side-projects/job-listing-with-filtering.png";
-import ipAddressTrackerImage from "../public/side-projects/ip-address-tracker.jpg";
-import howToBeAMillionaire from "../public/side-projects/how-to-be-a-millionare.png";
-
-import { experienceItems } from "./config";
+import { experienceItems } from "@/config";
+import ecommerceImage from "@/public/side-projects/e-commerce.png";
+import videoCoursesApp from "@/public/side-projects/video-courses-app.png";
+import rockPaperScissors from "@/public/side-projects/rock-paper-scissors.png";
+import ipAddressTrackerImage from "@/public/side-projects/ip-address-tracker.jpg";
+import jobListingImage from "@/public/side-projects/job-listing-with-filtering.png";
+import howToBeAMillionaire from "@/public/side-projects/how-to-be-a-millionare.png";
 
 function Section({ index, title, children, ...props }) {
   return (

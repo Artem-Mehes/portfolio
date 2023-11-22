@@ -1,5 +1,5 @@
-import Header from "./header";
-import Sections from "./sections";
+import Header from "@/components/header";
+import Sections from "@/components/sections";
 
 export default function Home() {
   return (

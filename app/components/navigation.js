@@ -2,9 +2,8 @@
 
 import { useState, useLayoutEffect } from "react";
 
+import { sections } from "@/config";
 import NavLink from "@/components/nav-link";
-
-import { sections } from "./config";
 
 const clamp = (value) => Math.max(0, value);
 const isBetween = (value, floor, ceil) => value >= floor && value <= ceil;
