@@ -30,7 +30,7 @@ export default function SideProjectCard({
             </h5>
           </div>
 
-          <span className="shrink-0 text-sm text-secondary">
+          <span className="shrink-0 font-robotoMono text-sm text-secondary">
             {dayjs().to(dayjs(date))}
           </span>
         </div>

@@ -24,7 +24,10 @@ export default function ExperienceList({ items, title, from, to }) {
         <h5 className="shrink-0 text-lg font-semibold text-accent">{title}</h5>
 
         {from && to && (
-          <span className="truncate text-sm text-secondary" title={date}>
+          <span
+            className="truncate font-robotoMono text-sm text-secondary"
+            title={date}
+          >
             {date}
           </span>
         )}
