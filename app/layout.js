@@ -5,6 +5,7 @@ import "./globals.css";
 import relativeTime from "dayjs/plugin/relativeTime";
 import localizedFormat from "dayjs/plugin/localizedFormat";
 import isToday from "dayjs/plugin/isToday";
+import ogImage from "../public/og-image.png";
 
 dayjs.extend(isToday);
 dayjs.extend(relativeTime);
@@ -23,6 +24,12 @@ export const robotoMono = JetBrains_Mono({
 export const metadata = {
   title: "Artem Mehes",
   description: "Portfolio",
+  openGraph: {
+    title: "Artem Mehes",
+    description: "Portfolio",
+    url: "https://www.artemmehes.dev/",
+    images: ["https://www.artemmehes.dev/og-image.png"],
+  },
 };
 
 export default function RootLayout({ children }) {

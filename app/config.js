@@ -62,7 +62,11 @@ export const experienceItems = [
     ],
   },
   {
-    title: "Fitness-related project",
+    from: "2021-06-28",
+    to: "2021-08-15",
+    title: (
+      <ArrowLink href="https://ultimateperformance.com/">Up Fitness</ArrowLink>
+    ),
     items: [
       <>
         Contributed to the development of a{" "}
@@ -92,6 +96,8 @@ export const experienceItems = [
     ],
   },
   {
+    to: "2021-06-01",
+    from: "2020-12-15",
     title: "Internal company products",
     items: [
       <>
