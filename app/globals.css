@@ -11,3 +11,14 @@ a, button {
   transition-timing-function: cubic-bezier(.4,0,.2,1);
   transition-duration: .15s;
 }
+
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 10px;
+  border: 3px solid #0f172a;
+}
