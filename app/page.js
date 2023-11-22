@@ -10,10 +10,9 @@ export default function Home() {
         <Sections />
 
         <footer className="bg-slate-800 p-3 text-center text-sm">
-          Built with <span className="font-semibold text-accent">Next.js</span>{" "}
-          and <span className="font-semibold text-accent">Tailwind CSS</span>,
-          deployed with{" "}
-          <span className="font-semibold text-accent">Vercel</span>
+          Built with <span className="text-accent">Next.js</span> and{" "}
+          <span className="text-accent">Tailwind CSS</span>, deployed with{" "}
+          <span className="text-accent">Vercel</span>
         </footer>
       </main>
     </div>
