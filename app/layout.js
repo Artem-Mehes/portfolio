@@ -23,11 +23,7 @@ export const robotoMono = JetBrains_Mono({
 export const metadata = {
   title: "Artem Mehes",
   description: "Portfolio",
-  openGraph: {
-    title: "Artem Mehes",
-    description: "Portfolio",
-    url: "https://www.artemmehes.dev/",
-  },
+  metadataBase: new URL("https://www.artemmehes.dev/"),
 };
 
 export default function RootLayout({ children }) {
