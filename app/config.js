@@ -1,13 +1,10 @@
 import ArrowLink from "@/components/arrow-link";
 
-export const sections = [
-  { id: "about", title: "About" },
-  { id: "experience", title: "Experience" },
-  {
-    id: "side-projects",
-    title: "Side projects",
-  },
-];
+export const sections = {
+  about: "About",
+  experience: "Experience",
+  "side-projects": "Side projects",
+};
 
 export const experienceItems = [
   {

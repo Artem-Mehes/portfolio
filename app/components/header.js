@@ -37,7 +37,7 @@ export default function Header() {
             className="rounded-full"
             src="https://avatars.githubusercontent.com/u/60154078?s=96&v=4"
           />
-          <h1 className="scroll-m-20 font-robotoMono text-2xl font-extrabold tracking-tight text-tertiary sm:text-4xl">
+          <h1 className="font-jetbrainsMono scroll-m-20 text-2xl font-extrabold tracking-tight text-tertiary sm:text-4xl">
             Artem Mehes
           </h1>
         </div>
@@ -45,7 +45,7 @@ export default function Header() {
         <div className="flex flex-col gap-10">
           <div className="flex flex-col gap-2">
             <h2 className="scroll-m-20 text-xl font-semibold tracking-tight text-tertiary first:mt-0">
-              Middle Front-End developer
+              Middle Front-End Developer
             </h2>
             <p className="text-secondary">
               I have 3 years of experience building web apps

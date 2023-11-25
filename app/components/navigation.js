@@ -39,7 +39,7 @@ export default function Navigation() {
 
   return (
     <nav className="hidden w-fit flex-col gap-4 lg:flex">
-      {sections.map(({ id, title }) => (
+      {Object.entries(sections).map(([id, title]) => (
         <NavLink key={id} name={id} activeSection={activeSection}>
           {title}
         </NavLink>

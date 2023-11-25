@@ -15,22 +15,27 @@ export const inter = Inter({
   variable: "--inter",
 });
 
-export const robotoMono = JetBrains_Mono({
+export const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
-  variable: "--roboto-mono",
+  variable: "--jetbrains-mono",
 });
 
 export const metadata = {
   title: "Artem Mehes",
   description: "Portfolio",
   metadataBase: new URL("https://www.artemmehes.dev/"),
+  openGraph: {
+    title: "Artem Mehes",
+    description:
+      "Experienced front-end developer with a passion for technology.",
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`bg-slate-900 font-sans text-primary antialiased selection:bg-teal-600 selection:text-slate-50 ${inter.variable} ${robotoMono.variable}`}
+        className={`font-inter bg-slate-900 text-primary antialiased selection:bg-teal-600 selection:text-slate-50 ${inter.variable} ${jetbrainsMono.variable}`}
       >
         {children}
       </body>

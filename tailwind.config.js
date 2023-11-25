@@ -18,8 +18,8 @@ module.exports = {
         tertiary: colors.slate["300"],
       },
       fontFamily: {
-        sans: ["var(--inter)", ...fontFamily.sans],
-        robotoMono: ["var(--roboto-mono)", fontFamily.sans],
+        inter: ["var(--inter)", ...fontFamily.sans],
+        jetbrainsMono: ["var(--jetbrains-mono)", ...fontFamily.sans],
       },
     },
   },

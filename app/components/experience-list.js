@@ -1,5 +1,5 @@
-import { BiChevronRight } from "react-icons/bi";
 import dayjs from "dayjs";
+import { BiChevronRight } from "react-icons/bi";
 
 function ListItem({ children }) {
   return (
@@ -25,7 +25,7 @@ export default function ExperienceList({ items, title, from, to }) {
 
         {from && to && (
           <span
-            className="truncate font-robotoMono text-sm text-secondary"
+            className="font-jetbrainsMono truncate text-sm text-secondary"
             title={date}
           >
             {date}

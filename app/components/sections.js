@@ -1,3 +1,5 @@
+import { cloneElement, Children, isValidElement } from "react";
+
 import ArrowLink from "@/components/arrow-link";
 import ExperienceList from "@/components/experience-list";
 import SideProjectCard from "@/components/side-project-card";
@@ -10,12 +12,28 @@ import ipAddressTrackerImage from "@/public/side-projects/ip-address-tracker.jpg
 import jobListingImage from "@/public/side-projects/job-listing-with-filtering.png";
 import howToBeAMillionaire from "@/public/side-projects/how-to-be-a-millionare.png";
 
+function Container({ children }) {
+  const childrenWithIndexes = Children.map(children, (child, index) => {
+    if (isValidElement(child)) {
+      return cloneElement(child, { index });
+    }
+
+    return child;
+  });
+
+  return (
+    <div className="flex flex-col gap-16 px-8 lg:mx-auto lg:max-w-2xl lg:gap-0 xl:max-w-3xl 2xl:max-w-4xl">
+      {childrenWithIndexes}
+    </div>
+  );
+}
+
 function Section({ index, title, children, ...props }) {
   return (
     <section {...props} className="flex flex-col gap-6 lg:pt-24">
       <div className="flex items-end gap-5">
-        <span className="leading-6">{index}</span>
-        <h3 className="font-robotoMono text-2xl font-extrabold leading-7 text-accent">
+        <span className="leading-6">{index + 1}</span>
+        <h3 className="font-jetbrainsMono text-2xl font-extrabold leading-7 text-accent">
           {title}
         </h3>
       </div>
@@ -29,8 +47,9 @@ function Section({ index, title, children, ...props }) {
 
 export default function Sections() {
   return (
-    <div className="flex flex-col gap-16 px-8 lg:mx-auto lg:max-w-2xl lg:gap-0 xl:max-w-3xl 2xl:max-w-4xl">
-      <Section id="about" title="About" index={1}>
+    <Container>
+      {/*TODO*/}
+      <Section id="about" title="About">
         <p>
           As a <span className="text-accent">front-end developer</span> with a
           passion for technology, my journey started with HTML and has since
@@ -50,7 +69,7 @@ export default function Sections() {
         </p>
       </Section>
 
-      <Section id="experience" title="Experience" index={2}>
+      <Section id="experience" title="Experience">
         <div className="flex flex-col gap-6">
           <div>
             <div className="flex flex-col gap-2">
@@ -63,7 +82,7 @@ export default function Sections() {
               </ArrowLink>
             </div>
 
-            <p className="font-robotoMono text-sm font-semibold text-secondary">
+            <p className="font-jetbrainsMono text-sm font-semibold text-secondary">
               2020 — PRESENT
             </p>
           </div>
@@ -76,7 +95,7 @@ export default function Sections() {
         </div>
       </Section>
 
-      <Section id="side-projects" title="Side projects" index={3}>
+      <Section id="side-projects" title="Side projects">
         <div className="flex flex-col gap-4">
           <SideProjectCard
             image={ecommerceImage}
@@ -178,6 +197,6 @@ export default function Sections() {
           </SideProjectCard>
         </div>
       </Section>
-    </div>
+    </Container>
   );
 }
